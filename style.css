@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-login {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
