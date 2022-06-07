@@ -10,3 +10,38 @@ header {
   align-items: center;
 }
 
+main {
+  display: flex;
+}
+
+main #evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#nome-sobrenome {
+  display: flex;
+}
+
+#email-house {
+  display: flex;
+}
+
+#radio-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#temMuitoInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.ladinho {
+  display: flex;
+}
