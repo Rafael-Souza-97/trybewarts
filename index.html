@@ -9,17 +9,13 @@
 </head>
 <body>
   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="header-logo"/>
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="" method="get">
-      <section>
-        <form class="trybewwarts-login" action="" method="get">
-          <label for="email">E-mail:</label>
-          <input type="text" id="email" name="email" placeholder="Email" value="tryber@teste.com">
-          <label for="senha">Senha:</label>
-          <input type="password" id="senha" name="password" placeholder="Senha" value="123456">
-          <button id="botao" type="button">Entrar</button>
-        </form>
+      <section class="flex-container">
+        <input class="email" type="email" name="email" placeholder="Email"/>
+        <input class="password" type="password" name="password" placeholder="Senha"/>
+        <button class="login-btn">Entrar</button>
       </section>
     </form>
   </header>
@@ -71,11 +67,11 @@
       <textarea name="textozin" id="" cols="30" rows="10" maxlength="500"></textarea>
     </section>
     <section class="ladinho">
-      <input name="aiou" type="checkbox" id="agreement" required>
+      <input name="aiou" type="checkbox" id="agreement">
       <label for="aiou" id="label-infos">Você concorda com o uso das informações acima?</label>
     </section>
     <section>
-      <button id="submit-btn" type="submit">Enviar</button>
+      <button id="submit-btn" type="submit" >Enviar</button>
     </section>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
@@ -87,3 +83,5 @@
   
 </body>
 </html>
+
+<!-- onchange="submitBtnActive()" -->
