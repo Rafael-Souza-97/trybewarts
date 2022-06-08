@@ -66,10 +66,11 @@
 
 
           <label class="textarea" for="text">Deixe seu comentário:</label>
-            <textarea name="text" id="text" cols="30" rows="10" maxlength="500"></textarea>
-          
+            <textarea name="text" id="textarea" cols="30" rows="10" maxlength="500" onkeyup="counterTextarea(this.value)"></textarea>
+            <span id="counter">500</span>Restantes<br>
+
           <label id="label-infos" for="agreement">
-            <input id="agreement" type="checkbox" name="agree" required>Você concorda com o uso das informações acima>
+            <input id="agreement" type="checkbox" name="agree" required>Você concorda com o uso das informações acima?
           </label>
 
           <button id="submit-btn" type="submit">Enviar</button>
