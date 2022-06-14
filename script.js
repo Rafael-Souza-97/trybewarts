@@ -5,7 +5,7 @@ const agreement = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 const counter = document.getElementById('counter');
 const text = document.getElementById('textarea');
-const form = document.getElementById('#form-data');
+// const form = document.getElementById('#form-data');
 
 function loginBtnActive() {
   loginBtn.addEventListener('click', () => {
@@ -46,7 +46,7 @@ window.onload = agreement.addEventListener('click', () => {
 //   Nome: ${nome.value} ${lastname.value}
 //   Email: ${emailForm.value}
 //   Casa: ${house.value}
-//   Família: ${family.value} 
+//   Família: ${family.value}
 //   Avaliação: ${note.value}
 //   Observações: ${observation.value};
 //   `;
