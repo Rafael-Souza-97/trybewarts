@@ -1,8 +1,10 @@
 const email = document.querySelector('.email');
 const password = document.querySelector('.password');
 const loginBtn = document.querySelector('.login-btn');
-// const counter = document.getElementById('counter');
-// const text = document.getElementById('textarea');
+const agreement = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+const counter = document.getElementById('counter');
+const text = document.getElementById('textarea');
 
 function loginBtnActive() {
   loginBtn.addEventListener('click', () => {
@@ -15,15 +17,16 @@ function loginBtnActive() {
 }
 loginBtnActive();
 
-// function counterTextarea(valor) {
-//   const max = 500;
-//   const total = valor.length;
-//   console.log(total);
-//   if (total <= max) {
-//     const rest = max - total;
-//     counter.innerHTML = rest;
-//   } else {
-//     text.value = valor.substr(0, max);
-//   }
-// }
-// counterTextarea(this.value);
+window.onload = agreement.addEventListener('click', () => {
+  if (agreement.value === 'checked') {
+    submitBtn.disabled = true;
+  } else {
+    submitBtn.disabled = false;
+  }
+});
+
+function textareaCount() {
+  const total = text.value.length;
+  counter.innerHTML = 500 - total;
+}
+text.addEventListener('input', textareaCount);

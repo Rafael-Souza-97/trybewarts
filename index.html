@@ -43,7 +43,6 @@
             <label for="back">Backend<input id="back" type="radio" name="family" value="Backend"></label>
             <label for="full">FullStack<input id="full" type="radio" name="family" value="FullStack"></label>
 
-
           <label id="label-content" for="check">Qual conteúdo você está com mais vontade de aprender?</label>
             <label for="HoFs">HoFs<input id="HoFs" class="subject" type="checkbox" name="check" value="HoFs"></label>
             <label for="Jest">Jest<input id="Jest" class="subject" type="checkbox" name="check" value="Jest"></label>
@@ -65,14 +64,14 @@
             <label for="10">10<input id="10" type="radio" name="rate" value="10"></label>
 
           <label class="textarea" for="text">Deixe seu comentário:</label>
-            <textarea name="text" id="textarea" cols="30" rows="10" maxlength="500" onkeyup="counterTextarea(this.value)"></textarea>
-            <span id="counter">500</span>Restantes<br>
+            <textarea name="text" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+            <span id="counter" maxlength="500"></span>Restantes<br>
 
           <label id="label-infos" for="agreement">
             <input id="agreement" type="checkbox" name="agree" required>Você concorda com o uso das informações acima?
           </label>
 
-          <button id="submit-btn" type="submit">Enviar</button>
+          <button id="submit-btn" type="submit" disabled>Enviar</button>
           
       </form>
 
