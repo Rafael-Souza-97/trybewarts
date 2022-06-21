@@ -5,7 +5,7 @@ const agreement = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 const counter = document.getElementById('counter');
 const text = document.getElementById('textarea');
-const resultForm = document.querySelector('.resultForm')
+const resultForm = document.querySelector('.resultForm');
 
 function loginBtnActive() {
   loginBtn.addEventListener('click', () => {
@@ -40,8 +40,8 @@ function formName() {
 }
 function formEmail() {
   const emailForm = document.getElementById('emailForm');
-  const email = document.querySelector('#input-email');
-  emailForm.innerText += ` ${email.value}`;
+  const emailF = document.querySelector('#input-email');
+  emailForm.innerText += ` ${emailF.value}`;
 }
 function formHouse() {
   const house = document.getElementById('house');
@@ -79,7 +79,7 @@ function formObs() {
   obsForm.innerText += ` ${textarea.value}`;
 }
 
-submitBtn.addEventListener('click',(e) => {
+submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const mainForm = document.querySelector('#evaluation-form');
   mainForm.style.display = 'none';
@@ -90,5 +90,5 @@ submitBtn.addEventListener('click',(e) => {
   formFamily();
   formMaterias();
   formRate();
-  formObs()
-})
+  formObs();
+});
