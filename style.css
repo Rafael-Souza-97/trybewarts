@@ -11,7 +11,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css;
   background-color: rgb(52, 194, 168);
   margin: 0;
   padding: 0;
-  height: 100px;
+  height: 80px;
   align-items: center;
 }
 
@@ -21,7 +21,7 @@ h1 {
 }
 
 .trybewarts-header-logo {
-  width: 75px;
+  width: 65px;
   margin-left: 250px;
 }
 
